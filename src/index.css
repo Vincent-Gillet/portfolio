@@ -15,12 +15,19 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
+  --background-color-body: #121212;
   --white-color: #ffffff;
-  --gray-color: #959595;
+  --grey-color: #959595;
+  --grey-icon-color: #BABABA;
   --orange-light: #FD6F00;
   --orange-dark: #E46400;
   --background-color-orange: linear-gradient(125deg, var(--orange-light), var(--orange-dark));
   --text-color-orange: -webkit-linear-gradient(125deg, var(--orange-light), var(--orange-dark));
+}
+
+html, body {
+  background-color: var(--background-color-body);
+  height: 100vh;
 }
 
 a, p, h1, h2, h3, h4, h5, h6, span, li, div, button {
@@ -29,13 +36,13 @@ a, p, h1, h2, h3, h4, h5, h6, span, li, div, button {
   font-style: normal;
 }
 
-a {
+.a-text {
   font-weight: 500;
   color: var(--grey-color);
   text-decoration: inherit;
 }
-a:hover, a:focus, a:active, a.active, .logo {
-  color: var(--main-color-orange);
+
+.a-text:hover, .a-text:focus, .a-text:active, .a-text.active, .logo {
   background: var(--text-color-orange);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -71,10 +78,6 @@ button {
 button:hover {
   border-color: #646cff;
 }
-/* button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-} */
 
 .a-btn, .a-btn:hover, .a-btn:focus, .a-btn:active {
   background: var(--background-color-orange);
