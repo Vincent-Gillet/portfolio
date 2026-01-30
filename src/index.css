@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=K2D:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
+  --font-lato: "Lato", sans-serif;
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
@@ -11,28 +14,84 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  --background-color-body: #121212;
+  --white-color: #ffffff;
+  --white-text: #DFDFDF;
+  --white-text-light: #FEFEFE;
+  --grey-color: #959595;
+  --grey-icon-color: #BABABA;
+  --grey-text-dark: #707070;
+  --orange-light: #FD6F00;
+  --orange-dark: #E46400;
+  --orange-dark-1: #984300;
+  --orange-dark-2: #CA5900;
+  --background-color-orange: linear-gradient(125deg, var(--orange-light), var(--orange-dark));
+  --text-color-orange: -webkit-linear-gradient(125deg, var(--orange-light), var(--orange-dark));
+  --title-orange: -webkit-linear-gradient(125deg, var(--orange-dark-1), var(--orange-light), var(--orange-dark-2));
+  --white-background-opacity: rgba(255, 255, 255, 0.04);
 }
 
-a {
+html, body {
+  background-color: var(--background-color-body);
+}
+
+body {
+  padding-top: 70px;
+}
+
+a, p, h1, h2, h3, h4, h5, h6, span, li, div, button {
+  font-family: var(--font-lato);
+  font-weight: 400;
+  font-style: normal;
+}
+
+p {
+  color: var(--grey-color);
+  font-size: 1em;
+  line-height: 1.6;
+}
+
+.a-text {
   font-weight: 500;
-  color: #646cff;
+  color: var(--grey-color);
   text-decoration: inherit;
 }
-a:hover {
-  color: #535bf2;
+
+.a-text:hover, .a-text:focus, .a-text:active, .a-text.active, .logo {
+  background: var(--text-color-orange);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.logo {
+  font-size: 1.8em;
+  font-family: "K2D", sans-serif;
+  font-weight: 700;
+  font-style: normal;
 }
 
 body {
   margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--white-text-light);
 }
 
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
+}
+
+.title-h2 {
+  font-size: 2.5em;
+  font-weight: 700;
+  margin-bottom: 0.5em;
+}
+
+#about, #contact {
+    scroll-margin-top: 80px;
 }
 
 button {
@@ -42,16 +101,31 @@ button {
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  background-color: #1a1a1a;
+  background: var(--background-color-orange);
   cursor: pointer;
   transition: border-color 0.25s;
 }
 button:hover {
   border-color: #646cff;
 }
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+
+.a-btn, .a-btn:hover, .a-btn:focus, .a-btn:active {
+  background: var(--background-color-orange);
+  -webkit-text-fill-color: #ffffff;
+  color: #ffffff;
+}
+
+.a-btn:hover {
+  opacity: 0.9;
+}
+
+li {
+  list-style: none;
+}
+
+.navbar-toggler:focus, .navbar-toggler:active, .navbar-toggler.focus, .navbar-toggler.active {
+  outline: none;
+  box-shadow: none;
 }
 
 @media (prefers-color-scheme: light) {
