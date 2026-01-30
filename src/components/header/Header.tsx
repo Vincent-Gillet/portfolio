@@ -11,17 +11,17 @@ function Header({ linkPages }: { linkPages: { name: string; href: string }[] }) 
 
     return (
     <>
-      <Navbar collapseOnSelect expand="lg" bg="dark" data-bs-theme="dark">
-        <Container fluid>
+      <Navbar className='fixed-top'     style={{ backgroundColor: 'var(--background-color-body)' }} collapseOnSelect expand="lg" data-bs-theme="dark">
+        <Container>
           <Navbar.Brand href="#home" className='logo'>VG</Navbar.Brand>
           <Navbar.Toggle aria-controls="navbarScroll" />
           <Navbar.Collapse id="navbarScroll">
             <Nav className="mx-auto">
                 {listLinkPages}
             </Nav>
-          <Nav className="">
-            <Button variant="" href='#contact' className='a-btn'>Embauchez-moi</Button>
-          </Nav>
+            <Nav className="">
+              <Button variant="" href='#contact' className='a-btn'>Embauchez-moi</Button>
+            </Nav>
           </Navbar.Collapse>
         </Container>
       </Navbar>

@@ -1,0 +1,37 @@
+.icon-skill i {
+    width: 85px;
+    height: 85px;
+    border-radius: 50%;
+    font-size: 2.5em;
+    color: var(--grey-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    border: 8px solid var(--orange-dark);
+}
+
+.label-skill {
+    margin-top: 0.5em;
+    font-weight: 600;
+    font-size: 0.9em;
+    color: var(--grey-color);
+}
+
+
+.image-about-me-container {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    border-radius: 30px;
+    overflow: hidden;
+
+    img {
+        width: 100%;
+        max-height: 300px;
+        height: 100%;
+        display: block;
+        object-fit: cover;
+
+    }
+}
