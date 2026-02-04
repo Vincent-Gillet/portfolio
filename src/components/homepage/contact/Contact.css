@@ -3,18 +3,6 @@
     width: 100%;
 }
 
-.input-form {
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    background-color: var(--white-background-opacity);
-    color: var(--white-text);
-}
-
-.input-form::placeholder, .label-consent {
-    color: var(--grey-color);
-}
-
 #consent {
     accent-color: var(--orange-dark);
 }
