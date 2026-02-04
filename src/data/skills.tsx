@@ -1,0 +1,16 @@
+export const skillsList = [
+    { name: 'HTML5', icon:'fa-brands fa-html5' },
+    { name: 'CSS3', icon:'fa-brands fa-css3-alt' },
+    { name: 'JavaScript', icon:'fa-brands fa-js' },
+    { name: 'TypeScript', icon:'fa-solid fa-code' },
+    { name: 'React', icon:'fa-brands fa-react' },
+    { name: 'Angular', icon:'fa-brands fa-angular' },
+    { name: 'PHP', icon:'fa-brands fa-php' },
+    { name: 'Symfony', icon:'fa-brands fa-symfony' },
+    { name: 'Laravel', icon:'fa-brands fa-laravel' },
+    { name: 'Java SE', icon:'fa-brands fa-java' },
+    { name: 'Spring', icon:'fa-solid fa-leaf' },
+    { name: 'MySQL', icon:'fa-solid fa-database' },
+    { name: 'Git', icon:'fa-brands fa-git-alt' },
+    { name: 'WordPress', icon:'fa-brands fa-wordpress' },
+];

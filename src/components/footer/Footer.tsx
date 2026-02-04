@@ -28,7 +28,7 @@ function Footer({ linkPages }: { linkPages: { name: string; href: string }[] }) 
                 {listLinkPages}
                 <Nav.Link href="#legal" className='a-text'>Mentions Légales</Nav.Link>
             </Nav>
-            <Nav className="flex-row justify-content-center gap-4">
+            <Nav className="network-container flex-row justify-content-center gap-4">
                 {listLinkNetworks}
             </Nav>
             <hr className='footer-barre'/>

@@ -33,7 +33,7 @@ function Presentation() {
                     <p className='text-intro'>Bonjour je suis</p>
                     <p className='name'>Vincent GILLET</p>
                     <h1 className='title-h1 '>Développeur Full Stack</h1>  
-                    <Nav className="flex-row justify-content-start gap-4">
+                    <Nav className="network-container flex-row justify-content-start gap-4">
                         {listLinkNetworks}
                     </Nav>      
                     
