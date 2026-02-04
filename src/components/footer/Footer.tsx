@@ -26,13 +26,13 @@ function Footer({ linkPages }: { linkPages: { name: string; href: string }[] }) 
           <Navbar.Brand href="#home" className='logo'>VG</Navbar.Brand>
             <Nav className="flex-sm-row justify-content-center column-gap-4">
                 {listLinkPages}
-                <Nav.Link href="#legal" className='a-text'>Mentions Légales</Nav.Link>
+                <Nav.Link href="/mentions-legales" className='a-text'>Mentions Légales</Nav.Link>
             </Nav>
             <Nav className="network-container flex-row justify-content-center gap-4">
                 {listLinkNetworks}
             </Nav>
             <hr className='footer-barre'/>
-            <p className="text-center copyright">© 2026 VG. Tout droits réservés.</p>
+            <p className="text-center copyright">© Copyright 2026 VG - Tout droits réservés.</p>
         </Container>
       </Navbar>
     </>

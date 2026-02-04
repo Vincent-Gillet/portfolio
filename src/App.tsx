@@ -3,7 +3,8 @@ import Home from './pages/homepage/Homepage';
 import Projects from './pages/projects/Projects';
 import Header from './components/header/Header';
 import Footer from './components/footer/Footer';
-import Project from './pages/project/project.tsx';
+import Project from './pages/project/Project';
+import LegalMentions from './pages/legal-mentions/legal-mentions.tsx';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './index.css'
@@ -24,7 +25,8 @@ function AppContent() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/projets" element={<Projects />} />
-        <Route path="/project/:id" element={<Project />} />
+        <Route path="/projet/:id" element={<Project />} />
+        <Route path="/mentions-legales" element={<LegalMentions />} />
       </Routes>
       <Footer linkPages={linkPages} />
     </>

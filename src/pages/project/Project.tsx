@@ -2,7 +2,7 @@ import { projectsList } from "../../data/projects";
 
 function Project() {
 
-    const index = window.location.pathname.split('/project/')[1];
+    const index = window.location.pathname.split('/projet/')[1];
 
     const project = projectsList.find(proj => proj.id.toString() === index);
 

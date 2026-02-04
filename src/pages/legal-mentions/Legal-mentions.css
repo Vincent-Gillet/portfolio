@@ -1,0 +1,12 @@
+.legal-mentions {
+
+    .h5 {
+        color: var(--grey-color);
+    }
+
+    li {
+        color: var(--grey-color);
+        font-size: 1em;
+        line-height: 1.6;
+    }
+}

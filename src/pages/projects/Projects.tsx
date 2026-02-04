@@ -157,7 +157,7 @@ function Projects() {
                 {
                     projects.map((project) => (
                         <div className="col d-flex justify-content-center" key={project.name}>
-                            <Nav.Link as={Link} to={`/project/${project.id}`} className="card h-100" style={{width: "18rem"}}>
+                            <Nav.Link as={Link} to={`/projet/${project.id}`} className="card h-100" style={{width: "18rem"}}>
                                 <img src={project.image} className="card-img-top" alt={project.name} />
                                 <div className="card-body">
                                     <h5 className="card-title">{project.name}</h5>
