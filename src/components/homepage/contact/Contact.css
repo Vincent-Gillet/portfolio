@@ -1,0 +1,9 @@
+.container-input, .input-form {
+    max-width: 460px;
+    width: 100%;
+}
+
+#consent {
+    accent-color: var(--orange-dark);
+}
+

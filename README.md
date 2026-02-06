@@ -1,73 +1,59 @@
-# React + TypeScript + Vite
+# Mon Portfolio - Vincent Gillet
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<img src="https://img.shields.io/badge/Next.js-16-black?style=flat&logo=next.js" alt="Next.js" />
+<img src="https://img.shields.io/badge/React-19-blue?style=flat&logo=react" alt="React" />
+<img src="https://img.shields.io/badge/TypeScript-5-blue?style=flat&logo=typescript" alt="TypeScript" />
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+[Voir le site en ligne](https://vincent-gillet-portfolio.netlify.app/) 
 
-## React Compiler
+## Table des matières
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- [Fonctionnalités](#fonctionnalites)
+- [Technologies utilisées](#technologies-utilisees)
+- [Installation](#installation)
+- [Configuration](#)
+- [Structure du projet](#)
+- [Déploiement](#)
 
-## Expanding the ESLint configuration
+## Fonctionnalités
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- SEO optimisé : Métadonnées dynamiques, OpenGraph, sitemap.xml.
+- SSR/SSG : Rendu côté serveur pour un chargement ultra-rapide.
+- Responsive Design : Adapté mobile, tablette et desktop avec Bootstrap.
+- Formulaire de contact : Intégration avec Netlify.
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## Technologies utilisées
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+| **Catégorie** | **Technologies**|
+|------|------|
+| **Framework** | Next.js 16 (App Router) |
+| **Langage** | [TypeScript](https://www.typescriptlang.org/)                                   |
+| **Styling**         | Bootstrap / CSS Modules |
+| **Déploiement** | Netlify                            |
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## Installation
+
+### Prérequis
+
+- Node.js ≥ 24.x
+- npm ≥ 11.x
+
+### Cloner le dépôt
+
+```
+git clone https://github.com/votre-utilisateur/portfolio.git
+cd portfolio
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+### Installer les dépendances
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
 ```
+npm install
+```
+
+## Déploiement
+
+- Connection votre dépôt GitHub à Netfily
+- Ajout des variables d'environnement
+- Commit sur la branch main

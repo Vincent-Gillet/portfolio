@@ -1,0 +1,16 @@
+.footer-navbar {
+    background-color: var(--white-background-opacity);
+}
+
+.footer-barre {
+    border: none;
+    height: 1px;
+    background-color: var(--grey-color);
+    margin: 1em 0;
+    width: 100%;
+}
+
+.copyright {
+    color: var(--grey-color);
+    font-size: 0.9em;
+}
