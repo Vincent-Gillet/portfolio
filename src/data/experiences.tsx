@@ -1,5 +1,6 @@
 export const experiencesList = [
     {
+        "id": 1,
         "date": "2025",
         "durée": "4 mois",
         "poste": "Stage Concepteur Développeur d'Applications",
@@ -9,6 +10,7 @@ export const experiencesList = [
 
     },
     {
+        "id": 2,
         "date": "2024",
         "durée": "2,5 mois",
         "poste": "Stage Développeur Web et Web Mobile",
@@ -17,6 +19,7 @@ export const experiencesList = [
         "technologies": ["WordPress", "PHP", "JavaScript"]
     },
     {
+        "id": 3,
         "date": "2023",
         "durée": "1,5 mois",
         "poste": "Stage Développeur Web et Web Mobile",

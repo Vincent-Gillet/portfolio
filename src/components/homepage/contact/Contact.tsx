@@ -1,3 +1,5 @@
+"use client";
+
 import { Button, FormLabel } from 'react-bootstrap';
 import './Contact.css';
 import { useState } from 'react';

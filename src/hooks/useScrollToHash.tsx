@@ -1,19 +1,25 @@
+"use client";
+
 import { useEffect } from 'react';
-import { useLocation } from 'react-router-dom';
+import { usePathname  } from 'next/navigation';
 
 export function useScrollToHash() {
-    const location = useLocation();
+    const pathname = usePathname();
 
     useEffect(() => {
-        if (location.hash) {
+        if (typeof window === 'undefined') return;
+
+        const hash = window.location.hash;
+
+        if (hash) {
             setTimeout(() => {
-                const element = document.querySelector(location.hash);
+                const element = document.querySelector(hash);
                 if (element) {
-                element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    element.scrollIntoView({ behavior: 'smooth', block: 'start' });
                 }
-            }, 100); 
+            }, 100);
         } else {
-            window.scrollTo(0, 0); 
+            window.scrollTo({ top: 0, behavior: 'smooth' });
         }
-    }, [location]);
+    }, [pathname]);
 }

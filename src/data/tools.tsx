@@ -1,10 +1,19 @@
+import {
+    faGithub,
+    faDocker,
+    faFigma,
+    faWindows,
+    faApple,
+} from '@fortawesome/free-brands-svg-icons';
+import { faCode, faEnvelope } from '@fortawesome/free-solid-svg-icons';
+
 export const toolsList = [
-    { name: 'GitHub', icon:'fa-brands fa-github' },
-    { name: 'Docker', icon:'fa-brands fa-docker' },
-    { name: 'Postman', icon:'fa-solid fa-envelope' },
-    { name: 'Visual Studio Code', icon:'fa-solid fa-code' },
-    { name: 'IntelliJ IDEA', icon:'fa-solid fa-code' },
-    { name: 'Figma', icon:'fa-brands fa-figma' },
-    { name: 'Windows', icon:'fa-brands fa-windows' },
-    { name: 'Mac', icon:'fa-brands fa-apple' },
+    { name: 'GitHub', icon: faGithub },
+    { name: 'Docker', icon: faDocker },
+    { name: 'Postman', icon: faEnvelope },
+    { name: 'Visual Studio Code', icon: faCode },
+    { name: 'IntelliJ IDEA', icon: faCode },
+    { name: 'Figma', icon: faFigma },
+    { name: 'Windows', icon: faWindows },
+    { name: 'Mac', icon: faApple },
 ];

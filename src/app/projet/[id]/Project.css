@@ -1,0 +1,73 @@
+/* Project.css */
+#project {
+  min-height: 800px; /* Hauteur minimale pour éviter les sauts */
+}
+
+/* Image principale */
+.image-project {
+  min-height: 400px;
+  width: 100%;
+  object-fit: cover;
+  object-position: top;
+  aspect-ratio: 16/9; /* Ratio fixe pour éviter les déformations */
+}
+
+/* Skeleton placeholder pour l'image */
+.image-skeleton {
+  min-height: 400px;
+  width: 100%;
+  background: #e0e0e0;
+  border-radius: 4px;
+}
+
+#description {
+  min-height: 500px; /* Hauteur minimale pour éviter les sauts lors du chargement */
+  contain: content;
+}
+
+/* Skeleton pour le texte */
+.text-skeleton {
+  width: 100%;
+  height: 20px;
+  margin-bottom: 12px;
+  background: #e0e0e0;
+  border-radius: 4px;
+}
+
+/* Skeleton pour les technologies */
+.skill-skeleton {
+  width: 100px;
+  height: 100px;
+  background: #e0e0e0;
+  border-radius: 50%;
+  margin: 0 auto 10px;
+}
+
+#project {
+    .skills-container {
+        min-height: 82px; 
+    }
+
+    /* Conteneur d'une technologie */
+    .skill-container {
+        height: 82px;
+        width: 120px; 
+    } 
+
+    /* Icône */
+    .icon-skill {
+        width: 50px;   /* Largeur fixe pour l'icône */
+        height: 50px;  /* Hauteur fixe pour l'icône */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 8px;
+    }
+
+    /* Texte sous l'icône */
+    .label-skill {
+        min-height: 20px; /* Hauteur minimale pour le texte */
+        text-align: center;
+        margin: 0; /* Supprime les marges par défaut */
+    }
+}

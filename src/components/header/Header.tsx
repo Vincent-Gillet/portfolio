@@ -1,20 +1,23 @@
+'use client';
+
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import Button from 'react-bootstrap/Button';
-import { Link } from 'react-router-dom';
+import Link from 'next/link';
+import './Header.css';
 
 function Header({ linkPages }: { linkPages: { name: string; href: string }[] }) {
 
     const listLinkPages = linkPages.map((link) => (
-        <Nav.Link key={link.name} as={Link} to={link.href} className='a-text'>{link.name}</Nav.Link>
+        <Nav.Link key={link.name} href={link.href} className='a-text'>{link.name}</Nav.Link>
     ));
 
     return (
     <>
       <Navbar className='fixed-top' style={{ backgroundColor: 'var(--background-color-body)' }} collapseOnSelect expand="lg" data-bs-theme="dark">
         <Container>
-          <Navbar.Brand as={Link} to="/" className='logo'>VG</Navbar.Brand>
+          <Navbar.Brand as={Link} href="/" className='logo'>VG</Navbar.Brand>
           <Navbar.Toggle aria-controls="navbarScroll" />
           <Navbar.Collapse id="navbarScroll">
             <Nav className="mx-auto">

@@ -1,23 +1,24 @@
+'use client';
+
 import './Footer.css';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
+import LinkNetworkComponent from '../link-network/Link-network'
 
 function Footer({ linkPages }: { linkPages: { name: string; href: string }[] }) {
 
-    const linkNetworks = [
-        { name: 'Linkdin', href: 'https://www.linkedin.com/in/vincent-cda', icon: 'fa-brands fa-linkedin' },
-        { name: 'Github', href: 'https://github.com/Vincent-Gillet', icon: 'fa-brands fa-github' },
-        { name: 'Mail', href: 'mailto:vincent-gillet@neuf.fr', icon: 'fa-solid fa-envelope' },
-    ];
-
     const listLinkPages = linkPages.map((link) => (
-        <Nav.Link key={link.name} href={link.href} className='a-text'>{link.name}</Nav.Link>
+        <Nav.Link 
+            key={link.name} 
+            href={link.href} 
+            className='a-text'
+        >
+            {link.name}
+        </Nav.Link>
     ));
 
-    const listLinkNetworks = linkNetworks.map((link) => (
-        <Nav.Link  target="_blank" key={link.name} href={link.href} className='circle'><i className={link.icon}></i></Nav.Link>
-    ));
+
 
     return (
     <>
@@ -28,8 +29,8 @@ function Footer({ linkPages }: { linkPages: { name: string; href: string }[] }) 
                 {listLinkPages}
                 <Nav.Link href="/mentions-legales" className='a-text'>Mentions Légales</Nav.Link>
             </Nav>
-            <Nav className="network-container flex-row justify-content-center gap-4">
-                {listLinkNetworks}
+            <Nav className="network-container flex-row justify-content-center gap-4">              
+                <LinkNetworkComponent />
             </Nav>
             <hr className='footer-barre'/>
             <p className="text-center copyright">© Copyright 2026 VG - Tout droits réservés.</p>

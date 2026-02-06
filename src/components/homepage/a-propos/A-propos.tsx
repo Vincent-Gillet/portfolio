@@ -1,54 +1,17 @@
-import { Button } from 'react-bootstrap';
+"use client";
+
 import './A-propos.css';
-import image from '../../../assets/homepage/image-code.jpg';
-import cv from '../../../assets/homepage/CV-Vincent-Gillet.pdf';
-import { skillsList } from '../../../data/skills.tsx';
-import { toolsList } from '../../../data/tools.tsx';
-import { schoolsList } from '../../../data/schools.tsx';
-import { experiencesList } from '../../../data/experiences.tsx';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faDownload } from '@fortawesome/free-solid-svg-icons';
 
 function A_propos() {
 
-    const listSkills = skillsList;
-    const listTools = toolsList;
-    const listSchool = schoolsList;
-    const listExperiences = experiencesList;
+    const image = '/assets/homepage/image-code.avif';
+    const cv = '/CV-Vincent-Gillet.pdf';
 
-    const skills = listSkills.map((skill) => (
-        <div className='skill-container col-5 col-sm-2 d-flex flex-column align-items-center' key={skill.name}>
-            <div className='icon-skill'>
-                <i className={skill.icon}></i>
-            </div>
-            <p className='label-skill'>{skill.name}</p>
-        </div>
-    ));
-
-    const tools = listTools.map((tool) => (
-        <div className='skill-container col-5 col-sm-2 d-flex flex-column align-items-center' key={tool.name}>
-            <div className='icon-skill'>
-                <i className={tool.icon}></i>
-            </div>
-            <p className='label-skill'>{tool.name}</p>
-        </div>
-    ));
-
-    const school = listSchool.map((schoolItem) => (
-        <li key={schoolItem.diplome}>
-            <p><strong>{schoolItem.date} :</strong> {schoolItem.diplome} - {schoolItem.etablissement}</p>
-        </li>
-    ));
-
-    const experiences = listExperiences.map((exp) => (
-        <li key={exp.poste}>
-            <p><strong>{exp.date} :</strong> {exp.poste} chez {exp.entreprise} <br></br>
-            <em>{exp.description}</em></p>
-            <div className='d-flex mb-3'><p className='mb-0'><strong>Technologies utilisées :</strong></p> <div className='d-flex gap-1 ms-2'>{exp.technologies.map(tech => {
-                return <span key={tech} className='badge technology-used'>{tech}</span>;
-             })
-            }</div></div>
-        </li>
-    ));
-
+    const handleClickCV = () => {
+        window.open(cv, '_blank');
+    };
 
     return (
         <div className="container" id="about">
@@ -76,32 +39,8 @@ function A_propos() {
                         stack pour mettre à profit mes compétences techniques, ma capacité d'adaptation et ma motivation à créer 
                         des applications web performantes et intuitives.
                     </p>
-                    <Button variant="" className='a-btn' href={cv} target="_blank"><i className="fa-solid fa-download"></i> Télécharger mon CV</Button>
+                    <button className='a-btn' onClick={handleClickCV}><FontAwesomeIcon icon={faDownload} /> Télécharger mon CV</button>
                 </div>
-            </div>
-            <h3 className='title-h3 text-center m-4'>Parcours</h3>
-            <div className="row justify-content-center">
-                <div className='col-12 col-md-8 col-lg-6'>
-                    <ul>
-                        {school}
-                    </ul>
-                </div>
-            </div>
-            <h3 className='title-h3 text-center m-4'>Expériences professionnelles</h3>
-            <div className="row justify-content-center">
-                <div className='col-12 col-md-10 col-lg-8'>
-                    <ul>
-                        {experiences}
-                    </ul>                       
-                </div>
-            </div>
-            <h3 className='title-h3 text-center m-4'>Compétences</h3>
-            <div className="row gap-auto justify-content-center justify-content-sm-start mt-4 mb-5 skills-container">
-                {skills}
-            </div>
-            <h3 className='title-h3 text-center m-4'>Outils</h3>
-            <div className="row gap-auto justify-content-center justify-content-sm-start mt-4 mb-5 skills-container">
-                {tools}
             </div>
         </div>
     );
