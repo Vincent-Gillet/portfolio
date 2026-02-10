@@ -1,5 +1,9 @@
 #projects-list {
-  min-height: 461px; 
+    min-height: 461px; 
+
+    .col {
+        height: 100%;
+    }
 }
 
 .label-filter {
