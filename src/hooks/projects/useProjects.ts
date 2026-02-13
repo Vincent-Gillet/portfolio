@@ -1,7 +1,6 @@
 import { useState, useEffect } from 'react';
 import { projectsList } from '../../data/projects';
 import type { Project } from "../../types/project";
-import type { ReactElement } from "react";
 import { useRef } from 'react';
 
 interface UseProjectsOptions {
@@ -15,8 +14,6 @@ export function useProjects({ itemsPerPage }: UseProjectsOptions) {
     const [projects, setProjects] = useState<Project[]>([]);
     const [filteredProjects, setFilteredProjects] = useState<Project[]>([]); 
     const [lengthPages, setLengthPages] = useState<number>(0);
-/*     const [items, setItems] = useState<ReactElement[]>([]);    
- */
     const technologiesRef = useRef<HTMLSelectElement>(null);
     const sortOrderRef = useRef<HTMLSelectElement>(null);
     const textRef = useRef<HTMLInputElement>(null);
@@ -74,9 +71,7 @@ export function useProjects({ itemsPerPage }: UseProjectsOptions) {
         projects,
         filteredProjects,
         lengthPages,
-        setLengthPages,  
-/*         setItems,
- */        
+        setLengthPages,          
         technologiesRef,
         sortOrderRef,
         textRef,
