@@ -2,6 +2,7 @@ import type { IconDefinition } from '@fortawesome/fontawesome-svg-core';
 
 export type Project = {
     id: number;
+    slug: string;
     name: string;
     description: string;
     technologies: Technology[];

@@ -229,3 +229,10 @@ li {
     background-color: #f9f9f9;
   }
 }
+
+#root:has(.not-found), html:has(.not-found), body:has(.not-found) {
+    height: calc(100vh);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;  
+}
