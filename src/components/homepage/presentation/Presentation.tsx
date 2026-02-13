@@ -1,7 +1,4 @@
 import './Presentation.css';
-import Link from 'next/link';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { linkNetworks } from '../../../data/networks';
 import { listStatistics } from '../../../data/statistique';
 import { FormVector } from '../../../../public/assets/homepage/vector.tsx';
 import LinkNetwork from '../../../components/link-network/Link-network.tsx';

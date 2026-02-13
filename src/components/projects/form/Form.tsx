@@ -1,30 +1,13 @@
 import { FormLabel } from 'react-bootstrap';
-import { projectsList } from '../../../data/projects.tsx';
-import { useEffect } from 'react';
 import type { FormProjectProps } from '../../../types/form.ts';
 
 function FormProject({
-    onChangeHandler, 
-/*     filterProjects, 
- */    
+    onChangeHandler,    
     techList, 
     technologiesRef,
     sortOrderRef,
     textRef
 }: FormProjectProps) {
-
-/*     useEffect(() => {
-        const allTechs = projectsList.flatMap(project => project.technologies);
-
-        const uniqueTechs = allTechs.filter(
-            (tech, index, self) =>
-            index === self.findIndex((t) => t.name === tech.name)
-        );
-
-        setTechList(uniqueTechs);
-
-        filterProjects(1);
-    }, []); */
 
     return (
         <form 
