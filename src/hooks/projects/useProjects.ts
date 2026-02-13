@@ -15,8 +15,8 @@ export function useProjects({ itemsPerPage }: UseProjectsOptions) {
     const [projects, setProjects] = useState<Project[]>([]);
     const [filteredProjects, setFilteredProjects] = useState<Project[]>([]); 
     const [lengthPages, setLengthPages] = useState<number>(0);
-    const [items, setItems] = useState<ReactElement[]>([]);    
-
+/*     const [items, setItems] = useState<ReactElement[]>([]);    
+ */
     const technologiesRef = useRef<HTMLSelectElement>(null);
     const sortOrderRef = useRef<HTMLSelectElement>(null);
     const textRef = useRef<HTMLInputElement>(null);
@@ -75,7 +75,8 @@ export function useProjects({ itemsPerPage }: UseProjectsOptions) {
         filteredProjects,
         lengthPages,
         setLengthPages,  
-        setItems,
+/*         setItems,
+ */        
         technologiesRef,
         sortOrderRef,
         textRef,
