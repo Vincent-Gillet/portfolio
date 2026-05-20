@@ -22,6 +22,7 @@ import {
 export const projectsList = [
     {
         "id": 1,
+        "slug": "courstache",
         "name": "Courstache",
         "description": "Ce projet est un site Vitrine pour une course pour une course contre les cancers masculin. Il a été realisé lors d'un stage en entreprise 1 mois et demi en parallèle d'autres missions dans une agence web COQPIT. Le site a pour but de présenter. J'ai utilisé WordPress pour la création de ce site, en personnalisant un thème Elementor. J'ai pu participer à toutes les étapes du projet, de la conception à la mise en ligne en passant par le développement.",
         "technologies": [
@@ -40,6 +41,7 @@ export const projectsList = [
     },
     {
         "id": 2,
+        "slug": "marret-courtage",
         "name": "Marret Courtage",
         "description": "Ce projet est un site Vitrine pour un courtier en assurance. Il a été realisé lors d'un stage en entreprise 2 mois et demi en parallèle d'autres missions dans une agence web COQPIT. Le site a pour but de présenter les services du courtier, ces employées, ainsi que de permettre aux clients potentiels de le contacter facilement via un formulaire de contact. J'ai utilisé WordPress pour la création de ce site, en créant un thème personnalisé et en développant des fonctionnalités spécifiques pour répondre aux besoins du client. J'ai pu participer à toutes les étapes du projet, de la conception à la mise en ligne, au rendez vous client en passant par le développement et les tests.",
         "technologies": [
@@ -60,6 +62,7 @@ export const projectsList = [
     },
     {
         "id": 3,
+        "slug": "pixel-snack",
         "name": "Pixel Snack",
         "description": "Ce projet est un site de recette de cuisine qui apparaissent dans des films, séries, animés, etc. . Je l'ai réalisé ce projet dans le cadre de mon projet de fin d'études pour obtenir mon diplôme de concepteur développeur d'application. L'application permet aux utilisateurs de rechercher des recettes, de les filtrer par catégorie, de soumettre leurs propres recettes. J'ai utilisé React pour le front-end, Laravel pour le back-end et MySQL pour la base de données. J'ai également intégré des fonctionnalités telles que l'authentification des utilisateurs et la gestion des recettes.",
         "technologies": [
@@ -79,6 +82,7 @@ export const projectsList = [
     },
     {
         "id": 4,
+        "slug": "electricity-business",
         "name": "Electricity Business",
         "description": "Ce projet est un site de réservation de bornes de recharge pour les véhicules électriques entre particuliers. Il a été réalisé dans le cadre de mon projet de fin d'études pour obtenir mon diplôme de concepteur développeur d'application. L'application permet aux utilisateurs de rechercher et réserver la location de bornes de recharge pour véhicules électriques. J'ai utilisé Angular pour le front-end, Spring pour le back-end et MySQL pour la base de données. J'ai également intégré des fonctionnalités telles que l'authentification des utilisateurs et la géolocalisation des bornes de recharge.",
         "technologies": [
@@ -101,6 +105,7 @@ export const projectsList = [
     },
     {
         "id": 5,
+        "slug": "portfolio-personnel",
         "name": "Portfolio Personnel",
         "description": "Ce projet est mon portfolio personnel, réalisé pour présenter mes compétences, mes projets et mon parcours professionnel en tant que développeur web. J'ai utilisé React pour le front-end, Bootstrap pour le design et la mise en page, et j'ai hébergé le site sur Netlify. Le portfolio met en avant mes réalisations, mes compétences techniques et offre un moyen de me contacter facilement.",
         "technologies": [
@@ -121,6 +126,7 @@ export const projectsList = [
     },
     {
         "id": 6,
+        "slug": "to-do-liste",
         "name": "To Do Liste",
         "description": "Ce projet est une application de gestion de tâches simple qui permet aux utilisateurs de créer, modifier et supprimer des tâches. J'ai utilisé JavaScript pour le développement de cette application, en mettant l'accent sur une interface utilisateur intuitive et réactive. L'application permet aux utilisateurs de suivre leurs tâches quotidiennes et d'améliorer leur productivité.",
         "technologies": [
@@ -143,6 +149,7 @@ export const projectsList = [
     },
     {
         "id": 7,
+        "slug": "jeu-du-pendu",
         "name": "Jeu du Pendu",
         "description": "Ce projet est une version numérique du jeu du pendu, où les utilisateurs peuvent deviner des mots en proposant des lettres. J'ai utilisé JavaScript pour développer ce jeu, en mettant l'accent sur une interface utilisateur simple et engageante. Le jeu offre une expérience amusante tout en permettant aux utilisateurs de tester leurs compétences en vocabulaire.",
         "technologies": [

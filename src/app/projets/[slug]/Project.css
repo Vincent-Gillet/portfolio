@@ -56,18 +56,13 @@
 
     /* Icône */
     .icon-skill {
-        width: 50px;   /* Largeur fixe pour l'icône */
-        height: 50px;  /* Hauteur fixe pour l'icône */
-        display: flex;
-        align-items: center;
-        justify-content: center;
         margin-bottom: 8px;
     }
 
     /* Texte sous l'icône */
     .label-skill {
-        min-height: 20px; /* Hauteur minimale pour le texte */
+        min-height: 20px; 
         text-align: center;
-        margin: 0; /* Supprime les marges par défaut */
+        margin: 0; 
     }
 }

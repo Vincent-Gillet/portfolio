@@ -1,5 +1,3 @@
-"use client";
-
 import './A-propos.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faDownload } from '@fortawesome/free-solid-svg-icons';

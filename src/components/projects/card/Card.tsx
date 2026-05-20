@@ -6,7 +6,7 @@ function Card({ project, lengthTech }: { project: Project, lengthTech: number })
     return (
         <>
             <div className="col d-flex justify-content-center" key={project.name}>
-                <Nav.Link href={`/projet/${project.id}`} className="card h-100" style={{width: "18rem"}}>
+                <Nav.Link href={`/projets/${project.slug}`} className="card h-100" style={{width: "18rem"}}>
                     <img src={project.image} className="card-img-top" alt={project.name} />
                     <div className="card-body">
                         <h5 className="card-title">{project.name}</h5>

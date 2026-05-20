@@ -1,5 +1,10 @@
 import './Legal-mentions.css';
 
+export const metadata = {
+  title: 'Mentions Légales | Portfolio',
+  description: '',
+}
+
 function LegalMentionsPage() {
     return (
         <main className="legal-mentions container my-5">

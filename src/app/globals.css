@@ -203,12 +203,19 @@ li {
     justify-content: center;
     padding: 20px;
     border: 8px solid var(--orange-dark);
+    transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
 
     svg {
         width: 30px;
         height: 30px;
     }
 }
+
+  .icon-skill:hover {
+    transform: translateY(-4px) scale(1.03);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.35);
+    border-color: var(--orange-light);
+  }
 
 .label-skill {
     margin-top: 0.5em;
@@ -228,4 +235,11 @@ li {
   button {
     background-color: #f9f9f9;
   }
+}
+
+#root:has(.not-found), html:has(.not-found), body:has(.not-found) {
+    height: calc(100vh);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;  
 }
